@@ -46,19 +46,19 @@ const RandomHikeSide = () => {
             <div style={{display:"flex", margin:"21px 0"}}>
                     <div style={{marginRight:"5px", fontWeight:"500"}}>
                         <img className="img_fvg img-card" style={{cursor: "pointer", objectFit:"cover", width:"260px", height:"200px", border:color === "yellow"? "solid 2px black":"0" }}
-                        src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639586877/monti%20fvg/catena_carnica_occidentale_nwqf4z.jpg" 
+                        src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639649158/monti%20fvg/OVEST1_wz5snr.png" 
                         onClick={(e)=>setColor("yellow")}/>
                         <p style={{textAlign: "center"}}>Alpi Carniche Occidentali</p>
                     </div>
                     <div style={{marginRight:"5px", fontWeight:"500"}}>
                         <img className="img_fvg img-card" style={{ cursor: "pointer", objectFit:"cover", width:"260px", height:"200px", border:color === "red"? "solid 2px black":"0"  }}
-                        src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639586877/monti%20fvg/catena_carnica_orienale_u9ggwp.jpg"
+                        src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639649157/monti%20fvg/CENTRO1_cvgwyf.png"
                         onClick={(e)=>setColor("red")} />
                         <p style={{textAlign: "center"}}> Alpi Carniche Orientali</p>
                     </div>
                     <div style={{marginRight:"5px",fontWeight:"500"}}>
                         <img className="img_fvg img-card" style={{cursor: "pointer", objectFit:"cover", width:"260px", height:"200px", border:color === "blu"? "solid 2px black":"0" }}
-                        src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639586877/monti%20fvg/alpi_giulie_w5n2q5.jpg" 
+                        src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639649157/monti%20fvg/EST1_bx4lz9.png" 
                         onClick={(e)=>setColor("blu")}/>
                         <p style={{textAlign: "center"}}>Alpi Giulie</p>
                     </div>

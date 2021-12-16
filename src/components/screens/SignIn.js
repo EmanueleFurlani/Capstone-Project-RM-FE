@@ -59,10 +59,10 @@ const SignIn = () => {
                         Login
                     </button>
                  <h5>
-                    <Link to="/signup">Don't have an account?</Link>
+                    <Link style={{color:"#0e2f5a"}} to="/signup">Don't have an account?</Link>
                 </h5>
-                <h6>
-                    <Link to="/reset">Forgot password?</Link>
+                <h6 style={{color:"#0e2f5a"}}>
+                    <Link style={{color:"#0e2f5a"}} to="/reset">Forgot password?</Link>
                 </h6>
             </div>
         </div>

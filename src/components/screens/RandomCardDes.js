@@ -4,12 +4,12 @@ import React, {useState} from "react"
 const RandomCardDes = ({description}) => {
 
     const [showBody, setShowBody] = useState(false)
-    if(description.length <50){
+    if(description.length <100){
         return(
              <p>{description}</p>
         )
     }
-    const visibleBody = showBody? description: description.substring(0, 50)
+    const visibleBody = showBody? description: description.substring(0, 100)
     return(
         <> 
         {/* <p >{visibleBody}</p> */}

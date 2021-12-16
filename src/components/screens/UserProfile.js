@@ -18,7 +18,7 @@ const Profile = () => {
             // console.log(result)
             setUserProfile(result)
         })
-    },[])
+    },[userid])
 
     const followUser = () =>{
         fetch("http://localhost:3001/user/follow", {

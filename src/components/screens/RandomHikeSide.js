@@ -144,8 +144,8 @@ const RandomHikeSide = () => {
                         <div style={{ height: '25px', width: '25px', marginLeft: '10px', borderRadius: '20px', backgroundColor: getDifficultyColor(item.difficulty)}}/>
                     </div>
                      {/* <p>Via Ferrata: {item.via_ferrata.toString()}</p>  */}
-                     {/* <RandomCardDes description={item.description}/> */}
-                    <div className="result-section"><span style={{fontSize: '12px'}}>{item.description.substring(0, 360)}</span></div>
+                     <RandomCardDes description={item.description}/>
+                    {/* <div className="result-section"><span style={{fontSize: '12px'}}>{item.description.substring(0, 360)}</span></div> */}
                 </div>
             </div>
         </div>

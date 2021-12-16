@@ -19,7 +19,7 @@ const Comments = ({comments}) => {
             )
         })
         }
-        {!showComments&&<button className="button" onClick={()=>{setShowComments(true)}}><span>Show all comments</span></button>}
+        {(!showComments&&comments.length >=3)&&<button className="button" onClick={()=>{setShowComments(true)}}><span>Show all comments</span></button>}
     </>
     )
 }

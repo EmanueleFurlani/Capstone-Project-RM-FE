@@ -45,19 +45,19 @@ const RandomHikeSide = () => {
             <p style={{fontWeight:"700", marginTop:"25px"}}>Pick a zone in the Italian Friuli Venezia Giulia region</p>
             <div style={{display:"flex", margin:"21px 0"}}>
                     <div style={{marginRight:"5px", fontWeight:"500"}}>
-                        <img className="img_fvg img-card" style={{cursor: "pointer", objectFit:"cover", width:"260px", height:"200px", border:color === "yellow"? "solid 2px black":"0" }}
+                        <img className="img_fvg img-card" style={{cursor: "pointer", objectFit:"cover", width:"100%", border:color === "yellow"? "solid 2px black":"0" }}
                         src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639649158/monti%20fvg/OVEST1_wz5snr.png" 
                         onClick={(e)=>setColor("yellow")}/>
                         <p style={{textAlign: "center"}}>Alpi Carniche Occidentali</p>
                     </div>
                     <div style={{marginRight:"5px", fontWeight:"500"}}>
-                        <img className="img_fvg img-card" style={{ cursor: "pointer", objectFit:"cover", width:"260px", height:"200px", border:color === "red"? "solid 2px black":"0"  }}
+                        <img className="img_fvg img-card" style={{ cursor: "pointer", objectFit:"cover", width:"100%", border:color === "red"? "solid 2px black":"0"  }}
                         src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639649157/monti%20fvg/CENTRO1_cvgwyf.png"
                         onClick={(e)=>setColor("red")} />
                         <p style={{textAlign: "center"}}> Alpi Carniche Orientali</p>
                     </div>
-                    <div style={{marginRight:"5px",fontWeight:"500"}}>
-                        <img className="img_fvg img-card" style={{cursor: "pointer", objectFit:"cover", width:"260px", height:"200px", border:color === "blu"? "solid 2px black":"0" }}
+                    <div style={{marginRight:"",fontWeight:"500"}}>
+                        <img className="img_fvg img-card" style={{cursor: "pointer", objectFit:"cover", width:"100%", border:color === "blu"? "solid 2px black":"0" }}
                         src="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639649157/monti%20fvg/EST1_bx4lz9.png" 
                         onClick={(e)=>setColor("blu")}/>
                         <p style={{textAlign: "center"}}>Alpi Giulie</p>
@@ -67,7 +67,7 @@ const RandomHikeSide = () => {
     )
 
     const renderFilters = () => (
-          <div className="input-field col s12">
+          <div className="input-field col s12" id="thanks">
             {/* <div className="filter-section">
                 <p style={{marginRight:"15px", fontWeight:"600"}}>Trail name</p>
                 <div className="input-field" style={{ width: "50%"}}>
@@ -133,7 +133,7 @@ const RandomHikeSide = () => {
     }
 
     const renderResult = (item) => (
-        <div className="card" style={{}} key={item._id}>
+        <div className="card" id="signInUp" key={item._id}>
             <div style={{display:"flex", justifyContent:"space-around"}}>
                 <img style={{height:"350px", width:"400px", objectFit:"cover", minWidth:"400px"}} src={item.photo}/>
                 <div style={{ padding: '20px'}}>
@@ -154,9 +154,9 @@ const RandomHikeSide = () => {
     const renderResults = () => {
         if (!filteredData || filteredData.length === 0) {
             return (
-                <div>
+                <div id="renderResults">
                 <p style={{fontWeight:"600"}}>No results. Try to change the filters</p>
-                <img src ="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639502688/monti%20fvg/istockphoto-94977211-612x612_ohwjpt.jpg"/>
+                <img id="signInUp" src ="https://res.cloudinary.com/dqffc0h5e/image/upload/v1639502688/monti%20fvg/istockphoto-94977211-612x612_ohwjpt.jpg"/>
                 </div>
             )
         }
@@ -209,11 +209,11 @@ const RandomHikeSide = () => {
 
     return (
         <div class="row">
-            <div id="filters" class="col s12 m6">
+            <div id="filters" class="col s3 m6">
                 {renderZones()}
                 {renderFilters()}
             </div>
-            <div id="render" class="col s12 m6 offset-l6">
+            <div id="render" class="col s3 m6 offset-l6" style={{float:"none"}}>
                 {renderResults()}
             </div>
             {renderModal()}

@@ -16,6 +16,13 @@
     display: none;
   }
 }
+
+/* @media (max-width: 1000px) {
+  #renderResults {
+    display: none;
+  }
+} */
+
 /* @media (max-width: 633px) {
   #navigator {
     display: none;
@@ -444,4 +451,11 @@ li:hover ~ li p {
   75% {
     transform: rotate(-15deg);
   }
+}
+
+#thanks {
+  padding-bottom: 30px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }

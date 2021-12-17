@@ -32,7 +32,7 @@ const SignUp = () => {
         .catch(err => console.log(err))
     }
     const uploadFields = () => {
-        fetch("http://localhost:3001/auth/signup",{
+        fetch("https://project-randomountain.herokuapp.com/auth/signup",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({

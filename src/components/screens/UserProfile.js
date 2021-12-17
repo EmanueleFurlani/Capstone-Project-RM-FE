@@ -9,7 +9,7 @@ const Profile = () => {
     const {userid} = useParams()
     const[showfollow, setShowFollow] = useState(state?!state.following.includes(userid):true)
     useEffect(() => {
-        fetch(`http://localhost:3001/user/user/${userid}`, {
+        fetch(`https://project-randomountain.herokuapp.com/user/user/${userid}`, {
             headers: {
                 "Authorization": "Bearer " +localStorage.getItem("jwt")
             }
@@ -21,7 +21,7 @@ const Profile = () => {
     },[userid])
 
     const followUser = () =>{
-        fetch("http://localhost:3001/user/follow", {
+        fetch("https://project-randomountain.herokuapp.com/user/follow", {
             method:"PUT",
             headers: {
                 "Content-Type":"application/json",
@@ -49,7 +49,7 @@ const Profile = () => {
     }
 
     const unfollowUser = () =>{
-        fetch("http://localhost:3001/user/unfollow", {
+        fetch("https://project-randomountain.herokuapp.com/user/unfollow", {
             method:"PUT",
             headers: {
                 "Content-Type":"application/json",

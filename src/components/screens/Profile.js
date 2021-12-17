@@ -10,7 +10,7 @@ const Profile = () => {
     // console.log(state)
 
     useEffect(() => {
-        fetch("http://localhost:3001/post/mypost", {
+        fetch("https://project-randomountain.herokuapp.com/post/mypost", {
             headers: {
                 "Authorization": "Bearer " +localStorage.getItem("jwt")
             }
@@ -34,7 +34,7 @@ const Profile = () => {
         .then(data => {
         // setUrl(data.url)
         // console.log(data)
-        fetch("http://localhost:3001/user/updatepic", {
+        fetch("https://project-randomountain.herokuapp.com/user/updatepic", {
             method: "PUT",
             headers: {
                 "Content-Type":"application/json",

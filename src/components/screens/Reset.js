@@ -8,7 +8,7 @@ const Reset = () => {
     const history = useHistory()
     const[email, setEmail] = useState("")
     const PostData = () => {
-        fetch("http://localhost:3001/auth/reset-password",{
+        fetch("https://project-randomountain.herokuapp.com/auth/reset-password",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

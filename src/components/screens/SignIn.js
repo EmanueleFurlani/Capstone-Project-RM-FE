@@ -10,7 +10,7 @@ const SignIn = () => {
     const[password, setPassword] = useState("")
     const[email, setEmail] = useState("")
     const PostData = () => {
-        fetch("http://localhost:3001/auth/signin",{
+        fetch("https://project-randomountain.herokuapp.com/auth/signin",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

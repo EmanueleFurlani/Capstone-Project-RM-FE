@@ -15,7 +15,7 @@ const RandomHikeSide = () => {
 
     console.log(color)
      useEffect(() => {
-        fetch("http://localhost:3001/adventure/allhike",{
+        fetch("https://project-randomountain.herokuapp.com/adventure/allhike",{
             headers: {
                 "Authorization": "Bearer "+ localStorage.getItem("jwt")
             }

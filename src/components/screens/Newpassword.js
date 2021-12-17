@@ -10,7 +10,7 @@ const Newpassword = () => {
     const {token} = useParams()
     console.log(token)
     const PostData = () => {
-        fetch("http://localhost:3001/auth/new-password",{
+        fetch("https://project-randomountain.herokuapp.com/auth/new-password",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

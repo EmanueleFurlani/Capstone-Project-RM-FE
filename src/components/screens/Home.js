@@ -36,7 +36,7 @@ const Home = () => {
     const{state, dispatch} = useContext(UserContext)
 
     useEffect(() => {
-        fetch("http://localhost:3001/post/allpost",{
+        fetch("https://project-randomountain.herokuapp.com/post/allpost",{
             headers: {
                 "Authorization": "Bearer "+ localStorage.getItem("jwt")
             }
@@ -48,7 +48,7 @@ const Home = () => {
     }, [])
 
     const likePost = (id) => {
-        fetch("http://localhost:3001/post/like", {
+        fetch("https://project-randomountain.herokuapp.com/post/like", {
             method: "PUT",
             headers: {
                 "Content-Type":"application/json",
@@ -71,7 +71,7 @@ const Home = () => {
         }
 
     const unlikePost = (id) => {
-        fetch("http://localhost:3001/post/unlike", {
+        fetch("https://project-randomountain.herokuapp.com/post/unlike", {
             method: "PUT",
             headers: {
                 "Content-Type":"application/json",
@@ -94,7 +94,7 @@ const Home = () => {
         }
 
     const makeComment = (text, postId) => {
-        fetch("http://localhost:3001/post/comment", {
+        fetch("https://project-randomountain.herokuapp.com/post/comment", {
             method:"PUT",
             headers: {
                 "Content-Type":"application/json",
@@ -121,7 +121,7 @@ const Home = () => {
     }
 
     const deletePost = (postid) => {
-        fetch(`http://localhost:3001/post/deletepost/${postid}`,{
+        fetch(`https://project-randomountain.herokuapp.com/post/deletepost/${postid}`,{
             method:"DELETE",
             headers: {
                 "Authorization":"Bearer " +localStorage.getItem("jwt")

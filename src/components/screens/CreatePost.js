@@ -13,7 +13,7 @@ const CreatePost = () => {
 
     useEffect(() => {
         if(url){
-         fetch("http://localhost:3001/post/createpost",{
+         fetch("https://project-randomountain.herokuapp.com/post/createpost",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

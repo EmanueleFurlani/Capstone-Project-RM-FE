@@ -16,6 +16,7 @@ import {initialState, reducer} from "./reducers/userReducer"
 // import Footer from "./components/screens/Footer"
 import Reset from './components/screens/Reset'
 import Newpassword from './components/screens/Newpassword';
+import ContactMe from './components/screens/ContactMe';
 
 export const UserContext = createContext()
 
@@ -63,6 +64,9 @@ const Routing = () => {
     </Route>
      <Route path="/randomhike">
         <RandomHikeSide />
+    </Route>
+    <Route path="/contactme">
+        <ContactMe />
     </Route>
   </Switch>
   )

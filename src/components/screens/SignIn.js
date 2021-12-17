@@ -30,7 +30,7 @@ const SignIn = () => {
                 localStorage.setItem("user", JSON.stringify(data.user))
                 dispatch({type:"USER", payload:data.user})
                 M.toast({html: "signedIn success", classes:"#81c784 green lighten-2"})
-                history.push("/")
+                history.push("/randomhike")
             }
         }).catch(err => {
             console.log(err)

@@ -23,7 +23,8 @@ const NavBar = () => {
         <li key="3"><Link to="/create">Create Post</Link></li>,
         <li key="4"><Link to="/myfollowingpost">My following Posts</Link></li>,
         <li key="5"><Link to="/randomhike">Random Hike!</Link></li>,
-        <li key="6">
+        <li key="6"><Link to="/contactme">Contact</Link></li>,
+        <li key="7">
            <button 
                 className="btn waves-effect waves-light"
                     onClick={() => {
@@ -37,8 +38,8 @@ const NavBar = () => {
       ]
     } else {
       return [
-        <li key="7"><Link to="/signin">Signin</Link></li>,
-        <li key="8"><Link to="/signup">Signup</Link></li>
+        <li key="8"><Link to="/signin">Signin</Link></li>,
+        <li key="9"><Link to="/signup">Signup</Link></li>
       ]
     }
   }

@@ -46,7 +46,7 @@ const NavBar = () => {
 
   const fetchUsers = (query) => {
     setSearch(query)
-    fetch("http://localhost:3001/user/search-users", {
+    fetch("https://project-randomountain.herokuapp.com/user/search-users", {
       method: "POST",
       headers:{
         "Content-Type":"application/json"
